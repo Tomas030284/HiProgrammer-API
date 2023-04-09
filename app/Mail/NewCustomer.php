@@ -13,7 +13,7 @@ class NewCustomer extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $subject= "Proyecto Integrador MundosE: Nuevo Cliente";
+    public $subject= "Proyecto Integrador MundosE: Nuevo Contacto";
     /**
      * Create a new message instance.
      */
@@ -29,7 +29,7 @@ class NewCustomer extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Proyecto Integrador MundosE: Nuevo Cliente',
+            subject: 'Proyecto Integrador MundosE: Nuevo Contacto',
         );
     }
 
